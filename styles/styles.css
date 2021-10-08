@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.page-header {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.button {
+    font-weight: 700;
+    background-color: #756257;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header-button {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.search-button {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.submit-button {
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #83B3D3;
+}
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-index {
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.reasons {
+    font-size: 22px;
+    line-height: 36px;
+    color: #000000;
+    text-align: center;
+}
+  
+.welcome {
+    background-image: url("../img/welcome-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+}    
+
+.advantages {
+    background-color: #83B3D31F;
+}
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .advantages-1, .advantages-2 {
+      color: #FFFFFF;
+      background-color: #83B3D3;
+  }
+  
+  .food {
+      background-color: #FFFFFF;
+  }
+  
+  .road {
+      background: #83B3D333;
+  }
+
+  .title {
+     font-weight: 700;
+     font-size: 30px;
+     line-height: 36px;
+     text-transform: uppercase;
+  }
+
+  .hotel-search-discription {
+      font-weight: 400;
+     font-size: 22px;
+     line-height: 26px;
+     color: #000000;
+}
+
+
+.newsletter-email {
+    background-image: url("../img/newsletter-email-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #FFFFFF;
+}
+
+.newsletter-email-discription {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.social-button {
+    background-color: #83B3D3;
+}
+
+.contacts-phone-link {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Каталог */
+
+.main-catalog {
+    background-image: url("../img/catalog/catalog-filter-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.catalog-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.hotels-found {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.control-label {
+    font-weight: 700;
+}
+
+.product-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.product-card-rating {
+    background: #F2F2F2;
+    color: #333333;
+}
+
+.pagination-item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.blue-button {
+    background-color: #83B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.brown-button {
+    background-color: #756257;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.green-button {
+    background-color: #7DB54F;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+/* как сделать прозрачный фон?*/
+.button-reset {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background:;
+} 
+
+.hotels-on-page {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
