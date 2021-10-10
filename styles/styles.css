@@ -31,6 +31,7 @@ body {
 }
 
 .blue-button {
+  font-family: "PT Sans";
   background-color: #83b3d3;
   text-decoration: none;
   text-transform: uppercase;
@@ -41,6 +42,7 @@ body {
 }
 
 .brown-button {
+  font-family: "PT Sans";
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
@@ -63,7 +65,6 @@ body {
   background-color: #ffffff;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .main-index {
@@ -77,7 +78,7 @@ body {
 .reasons {
   font-size: 22px;
   line-height: 36px;
-  color: #000000;
+  color: #333333;
   text-align: center;
 }
 
@@ -92,6 +93,10 @@ body {
 
 .advantages {
   background-color: #83b3d31f;
+}
+
+.advantages-discription {
+  color: #333333;
 }
 
 .advantages-title {
@@ -126,7 +131,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
+  color: #333333;
 }
 
 
@@ -136,6 +141,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   color: #ffffff;
+  text-align: center;
 }
 
 .newsletter-email-discription {
@@ -167,6 +173,7 @@ body {
 
 
 .main-catalog {
+  text-align: left;
   color: #333333;
 }
 
@@ -186,10 +193,11 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
+  text-transform: uppercase;
 }
 
 .control-label {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .product-card-title {
@@ -212,6 +220,7 @@ body {
 .product-card-rating {
   background: #f2f2f2;
   color: #333333;
+  text-transform: uppercase;
 }
 
 .pagination-item {
@@ -231,6 +240,7 @@ body {
 }
 
 .button-reset {
+  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -248,5 +258,15 @@ body {
 .pagination-show-more,
 .submit-button {
   font-size: 20px;
+  line-height: 26px;
+}
+
+.newsletter-email-catalog {
+  text-align: center;
+  color: #000000;
+}
+
+.newsletter-email-discription-catalog {
+  font-size: 22px;
   line-height: 26px;
 }
