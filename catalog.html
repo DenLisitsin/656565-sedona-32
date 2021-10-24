@@ -134,15 +134,17 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
         </form>
-        <a href="#" class="button">
-        <span class="visually-hidden">показать карточки</span>
-        </a>
-        <a href="#" class="button">
-        <span class="visually-hidden">показать не знаю что</span>
-        </a>
-        <a href="#" class="button">
-        <span class="visually-hidden">показать список</span>
-        </a>
+        <div class="sorting-container-button">
+         <a href="#" class="button">
+         <span class="visually-hidden">показать карточки</span>
+         </a>
+         <a href="#" class="button">
+         <span class="visually-hidden">показать не знаю что</span>
+         </a>
+         <a href="#" class="button">
+         <span class="visually-hidden">показать список</span>
+         </a>
+        </div>
       </div>
       <ul class="product-card">
         <li class="product-card-item">
@@ -187,7 +189,8 @@
         </li>
       </ul>
       <button class="blue-button pagination-show-more" type="button">Загрузать ещё</button>
-      <ul class="pagination">
+      <div class="pagination-container">
+       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
         </li>
@@ -206,8 +209,8 @@
         <li class="pagination-item">
           <a class="pagination-link blue-button" href="#">10</a>
         </li>
-      </ul>
-      <form class="hotels-on-page">
+       </ul>
+       <form class="hotels-on-page">
         <label for="sorting-on-page">Гостиниц на странице:</label>
         <select class="select-control" id="sorting-on-page" name="sorting">
           <option value="1">1</option>
@@ -216,7 +219,8 @@
           <option value="4">4</option>
         </select>
         <button class="visually-hidden" type="submit">выбрать количество</button>
-      </form>
+       </form>
+      </div>
       <section class="newsletter-email-catalog">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="title">Подпишитесь на рассылку</p>
