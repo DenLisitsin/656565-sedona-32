@@ -11,18 +11,18 @@
       <nav class="navigation" >
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Главная</a>
+            <a href="index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+            <a href="catalog.html" class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <a class="page-hader-logo-link" href="index.html">
-        <img class="page-header-logo" src="img/navigation-logo.svg" width="138" height="70" alt="Логотип SEDONA">
-        </a>
+        <!--<img class="page-header-logo" src="img/navigation-logo.svg" width="138" height="70" alt="Логотип SEDONA">
+        </a>-->
         <ul class="navigation-list navigation-user">
           <li class="navigation-item search">
             <a href="#" class="navigation-link">
@@ -50,13 +50,12 @@
         <header class="catalog-header">
           <h1 class="catalog-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="/index.html">
-              <img class="breadcrumbus-home" src="img/icons/home.svg" alt="Главная">
+            <li class="breadcrumbs-item ">
+              <a class="breadcrumbs-link breadcrumbs-home" href="/index.html">
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-current">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -159,7 +158,7 @@
         </div>
       </div>
       <ul class="product-card">
-        <li class="product-card-item">
+        <li class="product-card-item four-star">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/catalog/hotel-amara-resort-spa.jpg" width="180" height="120" alt="Amara Resort & Spa">
           </a>
@@ -170,7 +169,7 @@
           <a href="#" class="product-card-button blue-button">В Избранное</a>
           <span class="product-card-rating">Рейтинг: 8,5</span>
         </li>
-        <li class="product-card-item">
+        <li class="product-card-item three-star">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/catalog/hotel-desert-quail-inn.jpg" width="180" height="120" alt="Desert Quail Inn">
           </a>
@@ -181,7 +180,7 @@
           <a href="#" class="product-card-button blue-button">В Избранное</a>
           <span class="product-card-rating">Рейтинг: 8,9</span>
         </li>
-        <li class="product-card-item">
+        <li class="product-card-item two-star">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/catalog/hotel-villas-at-poco-diablo.jpg" width="180" height="120" alt="Villas at Poco Diablo">
           </a>
@@ -192,7 +191,7 @@
           <a href="#" class="product-card-button green-button">В Избранном</a>
           <span class="product-card-rating">Рейтинг: 9,2</span>
         </li>
-        <li class="product-card-item">
+        <li class="product-card-item two-star">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/catalog/hotel-desert-quail-inn.jpg" width="180" height="120" alt="GreenTree Inn">
           </a>
@@ -253,19 +252,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-link" href="#">
-              <svg class="twitter-icon" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="twitter-icon" d="m12 0 3 1h2v2l1-1a3 3 0 0 1-2 2c0 7-3 11-10 11H5s-4 0-5-2l5-1c-1 0-3 0-3-3h1C2 8 0 8 1 5l1 1C1 6 0 3 1 1a11 11 0 0 0 8 4c0-3 1-4 3-5Z" fill="#83B3D3"/></svg>
+              <svg class="social-icon" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social-icon" d="m12 0 3 1h2v2l1-1a3 3 0 0 1-2 2c0 7-3 11-10 11H5s-4 0-5-2l5-1c-1 0-3 0-3-3h1C2 8 0 8 1 5l1 1C1 6 0 3 1 1a11 11 0 0 0 8 4c0-3 1-4 3-5Z" fill="#83B3D3"/></svg>
             <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-link" href="#">
-              <svg class="facebook-icon" width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="facebook-icon" d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3"/></svg>
+              <svg class="social-icon" width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social-icon" d="M7 0a4 4 0 0 0-4 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" fill="#83B3D3"/></svg>
             <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="social-link" href="#">
-              <svg class="youtube-icon" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="youtube-icon" d="M17 0H3C1 0 0 2 0 3v10c0 2 1 3 3 3h14c2 0 3-1 3-3V3c0-1-1-3-3-3ZM7 12V4l7 4-7 4Z" fill="#83B3D3"/></svg>
+              <svg class="social-icon" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="social-icon" d="M17 0H3C1 0 0 2 0 3v10c0 2 1 3 3 3h14c2 0 3-1 3-3V3c0-1-1-3-3-3ZM7 12V4l7 4-7 4Z" fill="#83B3D3"/></svg>
             <span class="visually-hidden">YouTube</span>
             </a>
           </li>
