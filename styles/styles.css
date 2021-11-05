@@ -133,15 +133,23 @@ body {
   border: solid 3px transparent;
 }
 
-.navigation::before {
-  background-image: url('../img/navigation-logo.svg');
+.navigation-logo-link {
   position: absolute;
   top: 0;
-  left: 531px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 138px;
   height: 70px;
-  content: "";
+  margin: auto;
+  border: 3px solid transparent;
+  border-radius: 10px;
   z-index: 1;
+}
+
+.navigation-logo-link:focus {
+  border-color: #83b3d3;
+  outline: none;
 }
 
 .navigation-link-current::before {
@@ -648,7 +656,7 @@ color: #756257;
 }
 
 .newsletter-email-form .field:focus {
-  border: 2px solid #000000;
+  border: 3px solid #000000;
 }
 
 .newsletter-email-form .field {
@@ -1065,8 +1073,6 @@ content: "";
 .pagination-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
   display: block;
   box-sizing: border-box;
   width: 55px;
@@ -1078,6 +1084,7 @@ content: "";
 
 .pagination-current {
   background-color: #f2f2f2;
+  border: 3px solid transparent;
 }
 
 .hotels-on-page {
@@ -1086,18 +1093,19 @@ content: "";
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  min-width: 386px;
 }
 
 .hotels-on-page .select-control {
   margin-left: 51px;
-  min-width: 160px;
+  max-width: 160px;
 }
 
 .pagination-link,
 .pagination-show-more,
 .submit-button {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 20px;
 }
 
 .submit-button {
@@ -1579,6 +1587,7 @@ color: #000000  ;
   font-weight: 700;
   padding: 15px 0;
   border: 3px solid transparent;
+  outline: 1px solid #756257;
 }
   
 .all-favourites-button:hover {
@@ -1687,6 +1696,7 @@ color: #000000  ;
 }
 
 .date-form-field {
+  position: relative;
  width: 420px;
  margin-left: auto;
  border-radius: 4px;
@@ -1695,14 +1705,33 @@ color: #000000  ;
  line-height: 40px;
  font-weight: 700;
  padding-left: 20px;
+ padding-right: 45px;
  color: #000000;
  box-sizing: border-box;
  outline: 0;
  border: 3px solid transparent;
 }
 
+.date-form-field::placeholder {
+  color: #000000;
+}
+
 .date-form-field:focus {
   border-color: #83b3d3;
+}
+.date-form-field:active {
+  border-color: #000000;
+}
+
+.calendar-button {
+  position: absolute;
+  background-image: url('../img/icons/calendar.svg');
+  top: 18px;
+  right: 19px;
+  width: 15px;
+  height: 15px;
+border: none;
+opacity: 0.3;
 }
 
 .arrival-field-comment {
@@ -1862,6 +1891,7 @@ outline: 0;
   font-size: 20px;
   line-height: 40px;
   font-weight: 700;
+  padding: 7px 0;
 }
 
 .popover-info {
@@ -1878,6 +1908,7 @@ outline: 0;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   z-index: 1;
+  display: none;
 }
 
 .popover-info::before {
@@ -1912,6 +1943,10 @@ outline: 0;
   top: 8px;
   left: 54px;
   right: 18px;
+}
+
+.info-button:hover > .popover-info {
+  display: block;
 }
 
 .info-icon {

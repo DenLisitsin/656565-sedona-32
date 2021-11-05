@@ -20,6 +20,9 @@
             <a href="catalog.html" class="navigation-link">Гостиницы</a>
           </li>
         </ul>
+        <a href="index.html" class="navigation-logo-link">
+         <img class="navigation-logo-image" src="/img/navigation-logo.svg" width="138" height="70" alt="логотип сайта">
+        </a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item search">
             <a href="#" class="navigation-link">
@@ -35,13 +38,13 @@
               <svg class="navigation-icon-circle" aria-hidden="true" focusable="false" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z" fill="#7DB54F"/><path d="M5.63 12.26h1.4V7.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V13H5.63v-.74Zm7.83-4.67c0 .35-.07.72-.2 1.09a10.88 10.88 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18V13H9.62v-.29a33.15 33.15 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" fill="#fff"/></svg>
               <span class="visually-hidden">Избранное</span>
             </a>
-            <div class="popover popover-favourites ">
+            <div class="popover popover-favourites popover-open ">
               <div class="popover-content">
                 <h2 class="visually-hidden">Избранное</h2>
                 <ul class="favourites-item-list">
                   <li class="favourites-item">
                     <a href="#" class="favourites-link">
-                      <img class="favourites-link-image" src="/img/popover_img_1.png" width="48" height="48" alt="фото гостиниы">
+                      <img class="favourites-link-image" src="img/popover_img_1.png" width="48" height="48" alt="фото гостиниы">
                        <h2 class="favourites-item-title">Desert Quail Inn</h2>
                        <p class="favourites-item-type">Мотель</p>
                     </a>
@@ -52,7 +55,7 @@
                   </li>
                   <li class="favourites-item">
                     <a href="#" class="favourites-link">
-                      <img class="favourites-link-image" src="/img/popover_img_2.png" width="48" height="48" alt="фото гостиниы">
+                      <img class="favourites-link-image" src="img/popover_img_2.png" width="48" height="48" alt="фото гостиниы">
                       <h2 class="favourites-item-title">Villas at Poco Diablo</h2>
                       <p class="favourites-item-type">Мотель</p>
                     </a>
@@ -190,7 +193,7 @@
        </section>
     </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-open">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -200,14 +203,19 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label for="arrival-date" class="field-title">Дата заезда:</label>
+              <span class="input-container">
               <input type="text" class="date-form-field field" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-              <span class="calendar-image"></span>
+              <button type="button" class="calendar-button"></button>
+              </span>
               <span class="arrival-field-comment">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
               <label for="departure-date" class="field-title">Дата выезда:</label>
-              <input type="text" class="date-form-field field" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
-              <span class="calendar-image"></span>
+              <span class="input-container">
+                   <input type="text" class="date-form-field field" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+                   <button type="button" class="calendar-button"></button>
+              </span>
+              
               <span class="departure-field-comment">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="people-number-container">
