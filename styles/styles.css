@@ -36,6 +36,7 @@ body {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 25px 50px rgb(0 0 0 / 15%)
 }
 
 .page-header {
@@ -647,7 +648,7 @@ color: #756257;
 }
 
 .newsletter-email-form .field:focus:invalid {
-  border: 2px solid #ff5757;
+  border: 3px solid #ff5757;
 }
 
 .newsletter-email-form .field:focus {
@@ -1383,8 +1384,6 @@ content: "";
 }
 
 .min-price {
-  position: relative;
-
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border-right: 1px solid #ffffff;
@@ -1396,7 +1395,23 @@ content: "";
   border-left: 1px solid #ffffff;
 }
 
-.range-wrapper-inputs::after {
+.price-label {
+position: absolute;
+font-family: inherit;
+font-size: 18px;
+line-height: 23px;
+font-weight: 400;
+top: 45px;
+right: 15px;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.max-price-label {
+  position: absolute;
+  }
+
+
+/*.range-wrapper-inputs::after {
 position: absolute;
 left: 112px;
 top: 46px;
@@ -1413,7 +1428,7 @@ background-color: transparent;
   content: "до";
   z-index: 1;
   background-color: transparent;
-  }
+  }*/
 
   .range-input:hover {
 border-color: rgba(255, 255, 255, 0.6);
@@ -1627,7 +1642,7 @@ color: #000000  ;
 }
 
 .modal-open {
-  display: block;
+  display: flex;
 }
 
 .modal-content {

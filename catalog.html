@@ -21,7 +21,7 @@
           </li>
         </ul>
         <a href="index.html" class="navigation-logo-link">
-          <img class="navigation-logo-image" src="/img/navigation-logo.svg" width="138" height="70" alt="логотип сайта">
+          <img class="navigation-logo-image" src="img/navigation-logo.svg" width="138" height="70" alt="логотип сайта">
          </a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item search">
@@ -44,7 +44,7 @@
                 <ul class="favourites-item-list">
                   <li class="favourites-item">
                     <a href="#" class="favourites-link">
-                      <img class="favourites-link-image" src="/img/popover_img_1.png" width="48" height="48" alt="фото гостиниы">
+                      <img class="favourites-link-image" src="img/popover_img_1.png" width="48" height="48" alt="фото гостиниы">
                        <h2 class="favourites-item-title">Desert Quail Inn</h2>
                        <p class="favourites-item-type">Мотель</p>
                     </a>
@@ -55,7 +55,7 @@
                   </li>
                   <li class="favourites-item">
                     <a href="#" class="favourites-link">
-                      <img class="favourites-link-image" src="/img/popover_img_2.png" width="48" height="48" alt="фото гостиниы">
+                      <img class="favourites-link-image" src="img/popover_img_2.png" width="48" height="48" alt="фото гостиниы">
                       <h2 class="favourites-item-title">Villas at Poco Diablo</h2>
                       <p class="favourites-item-type">Мотель</p>
                     </a>
@@ -146,8 +146,14 @@
               <legend class="catalog-filter-title">Стоимость,₽:</legend>
               <div class="range">
                  <div class="range-wrapper-inputs">
+                   <span class="input-container">
+                   <label for="min-price" class="price-label">от</label>
                    <input class="range-input min-price" type="number" name="min-price" value="0">
+                   </span>
+                   <span class="input-container">
+                   <label for="max-price" class="price-label">до</label>
                    <input class="range-input max-price" type="number" name="max-price" value="9000">
+                   </span>
                  </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 227px;">
