@@ -1630,7 +1630,7 @@ color: #756257;
   background-color: #756257;
   color: #ffffff;
   text-decoration: none;
-  display: "PT sans", sans-serif;
+  display: block;
   border-radius: 0 0 20px 20px;
   text-transform: uppercase;
   font-family: "PT sans", sans-serif;
