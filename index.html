@@ -23,7 +23,7 @@
             </li>
           </ul>
           <a href="index.html" class="navigation-logo-link">
-          <img class="navigation-logo-image" src="img/navigation-logo.svg" width="138" height="70" alt="логотип сайта.">
+            <img class="navigation-logo-image" src="img/navigation-logo.svg" width="138" height="70" alt="логотип сайта.">
           </a>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item search">
@@ -45,14 +45,14 @@
                 </svg>
                 <span class="visually-hidden">Избранное</span>
               </a>
-              <div class="popover popover-favourites popover-open">
+              <div class="popover popover-favourites ">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Избранное</h2>
                   <ul class="favourites-item-list">
                     <li class="favourites-item">
                       <a href="#" class="favourites-link">
                         <img class="favourites-link-image" src="img/popover-img-1.png" width="48" height="48" alt="фото гостиниы.">
-                        <h2 class="favourites-item-title">Desert Quail Inn</h2>
+                        <h3 class="favourites-item-title">Desert Quail Inn</h3>
                         <p class="favourites-item-type">Мотель</p>
                       </a>
                       <button type="button" class="favourites-delete-button" >
@@ -66,7 +66,7 @@
                     <li class="favourites-item">
                       <a href="#" class="favourites-link">
                         <img class="favourites-link-image" src="img/popover-img-2.png" width="48" height="48" alt="фото гостиниы.">
-                        <h2 class="favourites-item-title">Villas at Poco Diablo</h2>
+                        <h3 class="favourites-item-title">Villas at Poco Diablo</h3>
                         <p class="favourites-item-type">Апартаменты</p>
                       </a>
                       <button type="button" class="favourites-delete-button" >
@@ -97,8 +97,8 @@
           </svg>
         </section>
         <div class="reasons-container">
-          <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="reasons-discription">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <section class="advantages">
           <h2 class="visually-hidden">Приемущества Седоны</h2>
@@ -159,7 +159,7 @@
         </section>
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск отеля</h2>
-          <p class="title">Заинтересовались?</p>
+          <p class="hotel-search-title">Заинтересовались?</p>
           <p class="hotel-search-discription">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="brown-button search-button" href="catalog.html">поиск гостиницы в седоне</a>
         </section>
@@ -167,8 +167,9 @@
           <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p class="newsletter-email-title">Подпишитесь на рассылку</p>
           <p class="newsletter-email-discription">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="newsletter-email-form" action="https://echo.htmlacademy.ru/" method="POST">
-            <input class="field" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="newsletter-email" placeholder="Ваш e-mail" required>
+          <form class="newsletter-email-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email" class="visually-hidden">Ваш e-mail</label>
+            <input class="field" type="email" id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="newsletter-email" placeholder="Ваш e-mail" required>
             <input class="blue-button submit-button" type="submit" value="Подписаться">
           </form>
         </section>
@@ -217,10 +218,10 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-open">
       <div class="modal modal-search">
-        <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
+        <button type="button" class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
@@ -230,7 +231,7 @@
               <span class="input-container">
               <input type="text" class="date-form-field field" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
               <button type="button" class="calendar-button">
-              <span class="visually-hidden">календарь</span>
+                <span class="visually-hidden">календарь</span>
               </button>
               </span>
               <span class="arrival-field-comment">Мы не можем отправить вас в прошлое.</span>
@@ -240,32 +241,32 @@
               <span class="input-container">
               <input type="text" class="date-form-field field" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
               <button type="button" class="calendar-button">
-              <span class="visually-hidden">календарь</span>
+                <span class="visually-hidden">календарь</span>
               </button>
               </span>
               <span class="departure-field-comment">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="people-number-container">
               <p class="field-group adult">
-                <label class="field-title">Взрослые:</label>
+                <label for="adult-input" class="field-title">Взрослые:</label>
                 <span class="input-container">
-                  <input type="number" class="number-form-field field" name="number-of-adults" value="2">
-                  <button type="button" class="outer-spin-button">
-                    <span class="visually-hidden">меньше</span>
-                    <svg class="outer-spin-image" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="outer-spin-image" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" fill="#000"/>
-                    </svg>
-                  </button>
+                  <input type="number" id="adult-input" class="number-form-field field" name="number-of-adults" value="2">
                   <button type="button" class="inner-spin-button">
-                    <span class="visually-hidden">больше</span>
+                    <span class="visually-hidden">меньше</span>
                     <svg class="inner-spin-image" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="inner-spin-image" d="M0 0v1h13V0H0z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="outer-spin-button">
+                    <span class="visually-hidden">больше</span>
+                    <svg class="outer-spin-image" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="outer-spin-image" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" fill="#000"/>
                     </svg>
                   </button>
                 </span>
               </p>
               <p class="field-group children">
-                <label class="field-title">
+                <label for="children-input" class="field-title">
                   Дети:
                   <button type="button" class="info-button">
                     <span class="visually-hidden">Информация</span>
@@ -286,24 +287,24 @@
                   </button>
                 </label>
                 <span class="input-container">
-                  <input type="number" class="number-form-field field"  name="number-of-children" value="1">
-                  <button type="button" class="outer-spin-button">
-                    <svg class="outer-spin-image" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="outer-spin-image" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" fill="#000"/>
-                    </svg>
-                  </button>
+                  <input type="number" id="children-input" class="number-form-field field"  name="number-of-children" value="1">
                   <button type="button" class="inner-spin-button">
+                    <span class="visually-hidden">меньше</span>
                     <svg class="inner-spin-image" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="inner-spin-image" d="M0 0v1h13V0H0z" fill="#000"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="outer-spin-button">
+                    <span class="visually-hidden">больше</span>
+                    <svg class="outer-spin-image" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path class="outer-spin-image" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" fill="#000"/>
                     </svg>
                   </button>
                 </span>
               </p>
             </div>
+            <button type="submit" class="modal-search-button blue-button">Найти</button>
           </form>
-          <button type="button" class="modal-search-button blue-button">Найти
-          <span class="visually-hidden">Найти</span>
-          </button>
         </section>
       </div>
     </div>
