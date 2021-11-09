@@ -2055,7 +2055,7 @@ color: #756257;
   outline: none;
 }
 
-.info-button:hover > .popover-info {
+.info-button:hover .popover-info {
   display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
