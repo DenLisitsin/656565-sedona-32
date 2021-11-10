@@ -105,13 +105,13 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 16px 0 11px;
+  padding: 16px 0 0;
   width: 450px;
   list-style-type: none;
 }
 
 .navigation-item {
-  margin: 0 0 2px;
+  margin: 0 0 13px;
 }
 
 .navigation-user {
@@ -183,6 +183,10 @@ input[type="number"] {
 .navigation-link:hover {
  color: #756257;
 }
+
+.navigation-link:hover .favourites-number {
+  color: rgba(255, 255, 255, 0.3);
+ }
 
 .navigation-link:focus {
   border: solid 3px #83b3d3;
@@ -414,10 +418,20 @@ color: #756257;
   fill: #756257;
 }
 
-.navigation-icon-circle {
+.favourites-number {
   position: absolute;
+  background-image: url("../img/icons/favourites-circle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
   top: -3px;
   left: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
   z-index: 1;
 }
 
@@ -646,7 +660,6 @@ color: #756257;
   margin: 0 0 58px;
 }
 
-
 .newsletter-email {
   background-color: #333333;
   background-image: url("../img/newsletter-email-background.jpg");
@@ -747,7 +760,6 @@ color: #756257;
 .catalog-filter-group:nth-child(3) {
   margin-right: 82px;
 }
-
 
 .main-catalog {
   text-align: left;
@@ -903,7 +915,6 @@ color: #756257;
   content: "";
 }
 
-
 .product-card-link  {
   text-decoration: none;
   grid-column: 1 / -5;
@@ -968,7 +979,6 @@ color: #756257;
   border: 1px solid #756257;
   padding: 8px 0 7px;
 }
-
 
 .green-button {
   grid-column: 4 / -2;
@@ -1139,7 +1149,6 @@ color: #756257;
   margin: 0;
   padding: 0;
 }
-
 
 .pagination-link {
   font-family: "PT Sans", sans-serif;
@@ -1375,7 +1384,6 @@ color: #756257;
   right: 3px;
   content: "";
 }
-
 
 .breadcrumbs-home {
   display: block;
@@ -1915,7 +1923,7 @@ color: #756257;
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.outer-spin-button:hover .outer-spin-image{
+.outer-spin-button:hover .outer-spin-image {
   fill: #000000;
 }
 
@@ -1951,7 +1959,7 @@ color: #756257;
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.inner-spin-button:hover .inner-spin-image{
+.inner-spin-button:hover .inner-spin-image {
   fill: #000000;
 }
 

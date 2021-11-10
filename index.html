@@ -13,21 +13,21 @@
         <nav class="navigation" >
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">О Cедоне</a>
+              <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <a href="index.html" class="navigation-logo-link">
+          <a class="navigation-logo-link" href="index.html">
             <img class="navigation-logo-image" src="img/navigation-logo.svg" width="138" height="70" alt="логотип сайта.">
           </a>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item search">
-              <a href="#" class="navigation-link">
+              <a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="поиск.">
                   <path class="navigation-icon" d="m18 16.5-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5ZM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6Z" fill="#000"/>
                 </svg>
@@ -35,17 +35,14 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">
+              <a class="navigation-link" href="#">
                 <svg class="navigation-icon navigation-icon-favourites" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="избранное.">
                   <path class="navigation-icon" d="M8.9 17a.9.9 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
                 </svg>
-                <svg class="navigation-icon-circle" aria-hidden="true" focusable="false" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z" fill="#7DB54F"/>
-                  <path d="M5.63 12.26h1.4V7.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V13H5.63v-.74Zm7.83-4.67c0 .35-.07.72-.2 1.09a10.88 10.88 0 0 1-1.21 2.21c-.26.35-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18V13H9.62v-.29a33.15 33.15 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.32-.64.43-.95.1-.31.16-.61.16-.89 0-.33-.1-.6-.28-.81-.19-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.45.22-.62.35l-.33-.57c.23-.2.51-.36.83-.47.32-.11.66-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z" fill="#fff"/>
-                </svg>
+                <span class="favourites-number">12</span>
                 <span class="visually-hidden">Избранное</span>
               </a>
-              <div class="popover popover-favourites ">
+              <div class="popover popover-favourites popover-open">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Избранное</h2>
                   <ul class="favourites-item-list">
@@ -83,7 +80,7 @@
               </div>
             </li>
             <li class="navigation-item">
-              <a href="#" class="brown-button">Хочу сюда!</a>
+              <a class="brown-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -218,29 +215,29 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container modal-open">
+    <div class="modal-container">
       <div class="modal modal-search">
-        <button type="button" class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label for="arrival-date" class="field-title">Дата заезда:</label>
+              <label class="field-title" for="arrival-date">Дата заезда:</label>
               <span class="input-container">
-              <input type="text" class="date-form-field field" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-              <button type="button" class="calendar-button">
+              <input class="date-form-field field" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+              <button class="calendar-button" type="button">
                 <span class="visually-hidden">календарь</span>
               </button>
               </span>
               <span class="arrival-field-comment">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group">
-              <label for="departure-date" class="field-title">Дата выезда:</label>
+              <label class="field-title" for="departure-date">Дата выезда:</label>
               <span class="input-container">
-              <input type="text" class="date-form-field field" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
-              <button type="button" class="calendar-button">
+              <input class="date-form-field field" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+              <button class="calendar-button" type="button">
                 <span class="visually-hidden">календарь</span>
               </button>
               </span>
@@ -248,16 +245,16 @@
             </p>
             <div class="people-number-container">
               <p class="field-group adult">
-                <label for="adult-input" class="field-title">Взрослые:</label>
+                <label class="field-title" for="adult-input">Взрослые:</label>
                 <span class="input-container">
-                  <input type="number" id="adult-input" class="number-form-field field" name="number-of-adults" value="2">
-                  <button type="button" class="inner-spin-button">
+                  <input class="number-form-field field" type="number" id="adult-input" name="number-of-adults" value="2">
+                  <button class="inner-spin-button" type="button">
                     <span class="visually-hidden">меньше</span>
                     <svg class="inner-spin-image" width="13" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="inner-spin-image" d="M0 0v1h13V0H0z" fill="#000"/>
                     </svg>
                   </button>
-                  <button type="button" class="outer-spin-button">
+                  <button class="outer-spin-button" type="button">
                     <span class="visually-hidden">больше</span>
                     <svg class="outer-spin-image" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="outer-spin-image" d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6z" fill="#000"/>
@@ -266,21 +263,21 @@
                 </span>
               </p>
               <p class="field-group children">
-                <label for="children-input" class="field-title">
+                <label class="field-title" for="children-input">
                   Дети:
                 </label>
-                <button type="button" class="info-button">
+                <button class="info-button" type="button">
                   <span class="visually-hidden">Информация</span>
                   <svg class="info-icon" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="информация.">
-                      <circle class="info-icon" cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
-                      <g clip-path="url(#clip0_2188:123)" fill="#fff">
-                        <path d="M12 17h1v-6h-1v6zM13 8h-1v1h1V8z"/>
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_2188:123">
-                          <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/>
-                        </clipPath>
-                      </defs>
+                    <circle class="info-icon" cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
+                    <g clip-path="url(#clip0_2188:123)" fill="#fff">
+                      <path d="M12 17h1v-6h-1v6zM13 8h-1v1h1V8z"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2188:123">
+                        <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/>
+                      </clipPath>
+                    </defs>
                   </svg>
                   <span class="popover-info">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
@@ -303,7 +300,7 @@
                 </span>
               </p>
             </div>
-            <button type="submit" class="modal-search-button blue-button">Найти</button>
+            <button class="modal-search-button blue-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
