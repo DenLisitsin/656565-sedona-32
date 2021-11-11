@@ -167,6 +167,7 @@
           <form class="newsletter-email-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
             <input class="field" type="email" id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="newsletter-email" placeholder="Ваш e-mail" required>
+              <!--для изменения на состояние "ошибка" используется класс "input-invalid"-->
             <input class="blue-button submit-button" type="submit" value="Подписаться">
           </form>
         </section>
@@ -218,6 +219,9 @@
     <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
+          <svg class="close-button-image" width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="close-button-image" d="M13 1.2L11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2z" fill="#000"/>
+          </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">

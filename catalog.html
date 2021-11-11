@@ -155,7 +155,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость,₽:</legend>
+                <legend class="catalog-filter-title">Стоимость, <span class="rub">Р</span> :</legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <span class="input-container">
@@ -191,16 +191,14 @@
             Найдено гостиниц:
             <span class="number-of-hotels">&nbsp;38</span>
           </p>
-          <form class="sorting-type">
-            <div class="select">
-              <label class="visually-hidden" for="sorting">Сортировка</label>
-              <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="popular">Сначала популярное</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
-            </div>
-          </form>
+          <div class="select">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="popular">Сначала популярное</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+          </div>
           <div class="sorting-container-button">
             <a class="card-grid-toggle" href="#">
               <svg class="button-block" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,6 +308,7 @@
           <form class="newsletter-email-form" action="https://echo.htmlacademy.ru/" method="POST">
             <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
             <input class="field" type="email" id="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="newsletter-email" placeholder="Ваш e-mail" required>
+              <!--для изменения на состояние "ошибка" используется класс "input-invalid"-->
             <input class="blue-button submit-button" type="submit" value="Подписаться">
           </form>
         </section>
